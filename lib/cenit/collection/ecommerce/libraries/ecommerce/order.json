@@ -1,0 +1,64 @@
+{
+  "title": "Order",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "channel": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "placed_on": {
+      "$ref": "DateTime"
+    },
+    "token": {
+      "type": "string"
+    },
+    "shipping_instructions": {
+      "type": "string"
+    },
+    "totals": {
+      "$ref": "order_total.json"
+    },
+    "line_items": {
+      "type": "array",
+      "items": {
+        "$ref": "line_item.json"
+      }
+    },
+    "adjustments": {
+      "type": "array",
+      "items": {
+        "$ref": "adjustment.json"
+      }
+    },
+    "payments": {
+      "type": "array",
+      "items": {
+        "$ref": "payment.json"
+      }
+    },
+    "shipping_address": {
+      "$ref": "address.json"
+    },
+    "billing_address": {
+      "$ref": "address.json"
+    }
+  },
+  "required": [
+    "id",
+    "status",
+    "channel",
+    "currency",
+    "placed_on"
+  ]
+}

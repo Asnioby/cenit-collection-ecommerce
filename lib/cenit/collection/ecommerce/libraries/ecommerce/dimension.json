@@ -1,0 +1,10 @@
+{
+  "schemas": {
+    "uri": "dimension.json",
+    "schema": "{\r\n    \"title\": \"Dimension\",\r\n\r\n    \"type\": \"object\",\r\n\r\n    \"properties\": {\r\n        \"height\": {\r\n            \"type\": \"integer\"\r\n        },\r\n        \"width\": {\r\n            \"type\": \"integer\"\r\n        }\r\n    }\r\n}",
+    "library": {
+      "_reference": true,
+      "name": "Ecommerce"
+    }
+  }
+}

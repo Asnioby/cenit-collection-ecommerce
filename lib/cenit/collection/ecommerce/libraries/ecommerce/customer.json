@@ -1,0 +1,29 @@
+{
+  "title": "Customer",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "firstname": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "shipping_address": {
+      "$ref": "address.json"
+    },
+    "billing_address": {
+      "$ref": "address.json"
+    }
+  },
+  "required": [
+    "id",
+    "firstname",
+    "lastname"
+  ]
+}

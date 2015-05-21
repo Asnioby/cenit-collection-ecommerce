@@ -1,0 +1,10 @@
+{
+  "schemas": {
+    "uri": "adjustment.json",
+    "schema": "{\r\n    \"title\": \"Adjustment\",\r\n    \r\n    \"type\": \"object\",\r\n    \r\n    \"properties\": {\r\n        \"name\": {\r\n            \"type\": \"string\"\r\n        },\r\n        \"value\": {\r\n            \"type\": \"string\"\r\n        }\r\n    },\r\n    \"required\": [\"name\", \"value\"]\r\n}",
+    "library": {
+      "_reference": true,
+      "name": "Ecommerce"
+    }
+  }
+}

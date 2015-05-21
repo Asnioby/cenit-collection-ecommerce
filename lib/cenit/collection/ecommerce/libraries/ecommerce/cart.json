@@ -1,0 +1,10 @@
+{
+  "schemas": {
+    "uri": "cart.json",
+    "schema": "{\r\n    \"title\": \"Cart\",\r\n\r\n    \"type\": \"object\",\r\n\r\n    \"properties\": {\r\n        \"id\": {\r\n            \"type\": \"string\"\r\n        },\r\n        \"status\": {\r\n            \"type\": \"string\"\r\n        },\r\n        \"channel\": {\r\n            \"type\": \"string\"\r\n        },\r\n        \"email\": {\r\n            \"type\": \"string\"\r\n        },\r\n        \"currency\": {\r\n            \"type\": \"string\"\r\n        },\r\n        \"placed_on\": {\r\n            \"$ref\": \"Date\"\r\n        },\r\n        \"totals\": {\r\n            \"$ref\": \"order_total.json\"\r\n        },\r\n        \"shipping_address\": {\r\n            \"$ref\": \"address.json\"\r\n        },\r\n        \"billing_address\": {\r\n            \"$ref\": \"address.json\"\r\n\r\n        },\r\n        \"line_items\": {\r\n            \"type\": \"array\",\r\n            \"items\": {\r\n                \"$ref\": \"line_item.json\"\r\n            }\r\n        },\r\n        \"adjustments\": {\r\n            \"type\": \"array\",\r\n            \"items\": {\r\n                \"$ref\": \"adjustment.json\"\r\n            }\r\n        },\r\n        \"payments\": {\r\n            \"type\": \"array\",\r\n            \"items\": {\r\n                \"$ref\": \"payment.json\"\r\n            }\r\n        }\r\n    },\r\n    \"required\": [\"id\", \"status\", \"channel\", \"email\", \"currency\", \"placed_on\", \"shipping_address\", \"billing_address\"]\r\n}",
+    "library": {
+      "_reference": true,
+      "name": "Ecommerce"
+    }
+  }
+}
