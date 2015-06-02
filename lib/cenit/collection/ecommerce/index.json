@@ -1,5 +1,7 @@
 {
-  "name": "Ecommerce Collection",
+  "name": "Ecommerce Library",
   "category": "Library",
-  "description": "Ecommerce Collection"
+  "description": "Ecommerce Collection",
+  "shared_version": "1.0.0",
+  "data": {"name": "Ecommerce Library"}
 }
